@@ -3,6 +3,12 @@
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# configure 1Password CLI
+# This command is meant to be used with your shell's eval function.
+# # Run 'eval $(op signin ruhmesmeile)' to sign into your 1Password account.
+# # If you wish to use the session token itself, pass the --output=raw flag value.
+#eval $(op signin ruhmesmeile)
+
 # Try to always start tmux, if appropriate: https://unix.stackexchange.com/a/113768
 # Attach to tmux session, which should be started in the background by `~/.config/systemd/user/tmux.service`
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
