@@ -31,4 +31,3 @@ if [ -d "$HOME/.rbenv/bin" ] ; then
     PATH="$HOME/.rbenv/bin:$PATH"
 fi
 
-export PLASMA_USE_QT_SCALING=1
