@@ -9,12 +9,6 @@ export NVM_DIR="$HOME/.nvm"
 # # If you wish to use the session token itself, pass the --output=raw flag value.
 #eval $(op signin ruhmesmeile)
 
-# Try to always start tmux, if appropriate: https://unix.stackexchange.com/a/113768
-# Attach to tmux session, which should be started in the background by `~/.config/systemd/user/tmux.service`
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  tmux attach;
-fi
-
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
