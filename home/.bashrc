@@ -138,3 +138,5 @@ eval "$(rbenv init -)"
 #export CPPFLAGS="-I/usr/local/opt/postgresql@9.6/include"
 
 #export PKG_CONFIG_PATH="/usr/local/opt/postgresql@9.6/lib/pkgconfig"
+
+source /home/julrich/.config/broot/launcher/bash/br
