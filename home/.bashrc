@@ -143,3 +143,19 @@ eval "$(rbenv init -)"
 #export PKG_CONFIG_PATH="/usr/local/opt/postgresql@9.6/lib/pkgconfig"
 
 source /home/julrich/.config/broot/launcher/bash/br
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
+        . "/usr/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
